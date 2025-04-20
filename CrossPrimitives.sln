@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossPrimitives", "CrossPri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossPrimitives.GodotAdapter", "CrossPrimitives.GodotAdapter\CrossPrimitives.GodotAdapter.csproj", "{102CB54C-AAA7-4145-938A-47EF231C8C99}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{13B0B7AA-A5B9-4EE3-BE2E-5D122974D065}"
+	ProjectSection(SolutionItems) = preProject
+		icon.png = icon.png
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
