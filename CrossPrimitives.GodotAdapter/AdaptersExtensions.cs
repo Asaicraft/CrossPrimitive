@@ -13,7 +13,7 @@ public static class AdaptersExtensions
     public static Godot.Vector2I AsGodot(this Vector2i vector)
     {
         // Same size as Godot.Vector2I, and the layout is the same
-        return new Godot.Vector2I(vector.X, vector.Y);
+        return Unsafe.As<Vector2i, Godot.Vector2I>(ref vector);
     }
 
     public static Godot.Vector3 AsGodot(this Vector3 vector)
@@ -36,14 +36,13 @@ public static class AdaptersExtensions
 
     public static Godot.Vector4I AsGodot(this Vector4i vector)
     {
-        // Same size as Godot.Vector4I, and the layout is the same
-        return new Godot.Vector4I(vector.X, vector.Y, vector.Z, vector.W);
+        return Unsafe.As<Vector4i, Godot.Vector4I>(ref vector);
     }
 
     public static Godot.Color AsGodot(this Color color)
     {
         // Same size as Godot.Color, and the layout is the same
-        return new Godot.Color(color.R, color.G, color.B, color.A);
+        return Unsafe.As<Color, Godot.Color>(ref color);
     }
 
     public static Vector2 AsCrossPrimitives(this Godot.Vector2 vector)
@@ -55,7 +54,7 @@ public static class AdaptersExtensions
     public static Vector2i AsCrossPrimitives(this Godot.Vector2I vector)
     {
         // Same size as Vector2i, and the layout is the same
-        return new Vector2i(vector.X, vector.Y);
+        return Unsafe.As<Godot.Vector2I, Vector2i>(ref vector);
     }
 
     public static Vector3 AsCrossPrimitives(this Godot.Vector3 vector)
@@ -67,7 +66,7 @@ public static class AdaptersExtensions
     public static Vector3i AsCrossPrimitives(this Godot.Vector3I vector)
     {
         // Same size as Vector3i, and the layout is the same
-        return new Vector3i(vector.X, vector.Y, vector.Z);
+        return Unsafe.As<Godot.Vector3I, Vector3i>(ref vector);
     }
 
     public static Vector4 AsCrossPrimitives(this Godot.Vector4 vector)
@@ -79,12 +78,12 @@ public static class AdaptersExtensions
     public static Vector4i AsCrossPrimitives(this Godot.Vector4I vector)
     {
         // Same size as Vector4i, and the layout is the same
-        return new Vector4i(vector.X, vector.Y, vector.Z, vector.W);
+        return Unsafe.As<Godot.Vector4I, Vector4i>(ref vector);
     }
 
     public static Color AsCrossPrimitives(this Godot.Color color)
     {
         // Same size as Color, and the layout is the same
-        return new Color(color.R, color.G, color.B, color.A);
+        return Unsafe.As<Godot.Color, Color>(ref color);
     }
 }
