@@ -1,4 +1,8 @@
-﻿# CrossPrimitives
+﻿﻿![Build](https://github.com/Asaicraft/CrossPrimitives/actions/workflows/dotnet.yml/badge.svg?)
+[![NuGet Stats](https://img.shields.io/nuget/v/CrossPrimitives.svg)](https://www.nuget.org/packages/CrossPrimitives?)
+[![Discord](https://img.shields.io/badge/chat-discord-purple.svg)](https://discord.gg/RpxD2BeNsZ)
+
+# CrossPrimitives
 
 **CrossPrimitives** is a lightweight, engine-independent C# primitives library that cleanly separates game/app logic from rendering concerns. Designed to be compatible with any game engine, rendering system, or UI framework.
 
