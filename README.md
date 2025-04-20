@@ -1,4 +1,4 @@
-﻿﻿![Build](https://github.com/Asaicraft/CrossPrimitives/actions/workflows/dotnet.yml/badge.svg?)
+﻿﻿![Build](https://github.com/Asaicraft/CrossPrimitive/actions/workflows/dotnet.yml/badge.svg?)
 [![NuGet Stats](https://img.shields.io/nuget/v/CrossPrimitives.svg)](https://www.nuget.org/packages/CrossPrimitives?)
 [![Discord](https://img.shields.io/badge/chat-discord-purple.svg)](https://discord.gg/RpxD2BeNsZ)
 
