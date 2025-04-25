@@ -25,10 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CrossPrimitives.SourceGenerator\CrossPrimitives.SourceGenerator.csproj" 
-                      OutputItemType="Analyzer"
-                      ReferenceOutputAssembly="false" 
-                      PrivateAssets="All" />
+    <ProjectReference Include="..\CrossPrimitives.SourceGenerator\CrossPrimitives.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
