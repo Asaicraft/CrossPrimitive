@@ -241,6 +241,11 @@ public readonly struct Vector4i(int x, int y, int z, int w)
 
     public readonly float Average() => (X + Y + Z + W) / 4f;
 
+    public readonly bool IsNormalized()
+    {
+        return MathF.Abs(LengthSquared() - 1f) < 1E-06f;
+    }
+
     public readonly void Deconstruct(out int x, out int y, out int z, out int w)
     {
         x = X;

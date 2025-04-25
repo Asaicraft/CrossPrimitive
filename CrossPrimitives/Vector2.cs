@@ -228,6 +228,11 @@ public readonly struct Vector2(float x, float y)
         return new Vector2(Y, 0f - X);
     }
 
+    public readonly bool IsNormalized()
+    {
+        return MathF.Abs(LengthSquared() - 1f) < 1E-06f;
+    }
+
     public readonly void Deconstruct(out float x, out float y)
     {
         x = X;

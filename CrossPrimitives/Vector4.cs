@@ -203,6 +203,11 @@ public readonly struct Vector4(float x, float y, float z, float w)
 
     public readonly float Average() => (X + Y + Z + W) / 4f;
 
+    public readonly bool IsNormalized()
+    {
+        return MathF.Abs(LengthSquared() - 1f) < 1E-06f;
+    }
+
     public readonly void Deconstruct(out float x, out float y, out float z, out float w)
     {
         x = X;

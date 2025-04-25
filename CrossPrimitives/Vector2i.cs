@@ -217,6 +217,11 @@ public readonly struct Vector2i(int x, int y)
 
     public readonly float Average() => (X + Y) / 2f;
 
+    public readonly bool IsNormalized()
+    {
+        return MathF.Abs(LengthSquared() - 1f) < 1E-06f;
+    }
+
     public readonly void Deconstruct(out int x, out int y)
     {
         x = X;

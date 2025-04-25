@@ -209,6 +209,11 @@ public readonly struct Vector3(float x, float y, float z)
 
     public readonly float Average() => (X + Y + Z) / 3f;
 
+    public readonly bool IsNormalized()
+    {
+        return MathF.Abs(LengthSquared() - 1f) < 1E-06f;
+    }
+
     public readonly void Deconstruct(out float x, out float y, out float z)
     {
         x = X;
