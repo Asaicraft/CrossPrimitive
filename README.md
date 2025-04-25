@@ -27,12 +27,7 @@ This library is meant to be **owned by your logic layer**. Your rendering engine
 
 ## Adapter: Godot Engine
 
-To use CrossPrimitives types in [Godot](https://godotengine.org/), install the adapter:
-```bash
-dotnet add package CrossPrimitives.GodotAdapter
-```
-
-The `CrossPrimitives.GodotAdapter` package provides efficient zero-cost interop between CrossPrimitives and Godot's native types:
+To use CrossPrimitives types in [Godot](https://godotengine.org/)
 
 ```csharp
 using CrossPrimitives;
