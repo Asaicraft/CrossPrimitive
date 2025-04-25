@@ -215,6 +215,8 @@ public readonly struct Vector2i(int x, int y)
 
     public readonly Vector2i Orthogonal() => new(Y, -X);
 
+    public readonly float Average() => (X + Y) / 2f;
+
     public readonly void Deconstruct(out int x, out int y)
     {
         x = X;

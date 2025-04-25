@@ -234,6 +234,11 @@ public readonly struct Vector2(float x, float y)
         y = Y;
     }
 
+    public readonly float Average()
+    {
+        return (X + Y) / 2f;
+    }
+
     #endregion
 
     /// <inheritdoc/>

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CrossPrimitives;
-public static class VectorExtensions
+public static partial class VectorExtensions
 {
     public static Vector2 AsVector2(this Vector2 v) => new(v.X, v.Y);
     public static Vector2 AsVector2(this Vector2i v) => new(v.X, v.Y);

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CrossPrimitives.SourceGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\CrossPrimitives\\CrossPrimitives.csproj"
+    }
+  }
+}

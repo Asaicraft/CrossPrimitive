@@ -235,6 +235,7 @@ public readonly struct Vector3i(int x, int y, int z)
                 : new(-Y, X, 0);
     }
 
+    public readonly float Average() => (X + Y + Z) / 3f;
     public readonly void Deconstruct(out int x, out int y, out int z)
     {
         x = X;
