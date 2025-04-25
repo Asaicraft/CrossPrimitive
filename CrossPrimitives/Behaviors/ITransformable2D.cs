@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CrossPrimitives.Behaviors;
 
-public interface ITransformable
+public interface ITransformable2D
 {
-    public ITransform Transform
+    public ITransform2D Transform
     {
         get; 
     }

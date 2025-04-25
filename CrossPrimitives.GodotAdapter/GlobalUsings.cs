@@ -1,0 +1,1 @@
+﻿global using CpVector2 = CrossPrimitives.Vector2;

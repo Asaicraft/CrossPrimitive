@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrossPrimitives.Behaviors;
 
-public interface ITransform
+public interface ITransform2D
 {
     public Vector2 GlobalPosition
     {
