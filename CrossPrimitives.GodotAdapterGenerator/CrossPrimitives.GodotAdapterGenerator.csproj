@@ -22,7 +22,6 @@
     <RepositoryUrl>https://github.com/Asaicraft/CrossPrimitive</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageType>Analyzer</PackageType>
   </PropertyGroup>
 
   <ItemGroup>

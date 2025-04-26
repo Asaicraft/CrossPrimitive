@@ -6,6 +6,7 @@ using System.Text;
 
 namespace CrossPrimitives.GodotAdapterGenerator;
 
+[Generator(LanguageNames.CSharp)]
 public sealed class TransformAdapterGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
