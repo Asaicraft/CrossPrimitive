@@ -27,7 +27,13 @@ This library is meant to be **owned by your logic layer**. Your rendering engine
 
 ## Adapter: Godot Engine
 
-To use CrossPrimitives types in [Godot](https://godotengine.org/)
+To use CrossPrimitives types in [Godot](https://godotengine.org/) install the[CrossPrimitives.GodotAdapterGenerator](https://www.nuget.org/packages/CrossPrimitives.GodotAdapterGenerator) package. This package generates the necessary code to convert between CrossPrimitives types and Godot's built-in types.
+
+```bash
+dotnet add package CrossPrimitives.GodotAdapterGenerator
+```
+
+### Example
 
 ```csharp
 using CrossPrimitives;
@@ -43,4 +49,4 @@ Godot.Vector3I godotInt = new Godot.Vector3I(3, 4, 5);
 Vector3i crossInt = godotInt.AsCrossPrimitives();
 ```
 
-The adapter uses Unsafe.As<,> internally, assuming that structures have identical memory layout to Godot's built-in types. This ensures performance with zero allocation and no data copy.
+For more details, see [CrossPrimitives.GodotAdapterGenerator](https://github.com/Asaicraft/CrossPrimitive/tree/master/CrossPrimitives.GodotAdapterGenerator/README.md) package documentation.
